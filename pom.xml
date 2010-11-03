@@ -121,7 +121,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>de.lhein.tooling.E2MParser</mainClass>
+							<mainClass>de.lhein.tooling.EclipsePluginParser</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
