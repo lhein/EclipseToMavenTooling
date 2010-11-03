@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="de.lhein.tooling.MainWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="688" height="518"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="c3090" binding="scrollPanel">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="f92fb" binding="panel" layout-manager="GridBagLayout">
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="4bf05" class="javax.swing.JLabel" binding="lblEclipseFolder">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Eclipse Folder:"/>
+                  <toolTipText value="Specify the eclipse installation folder..."/>
+                </properties>
+              </component>
+              <component id="c9fb9" class="javax.swing.JTextField" binding="txtEclipseFolder">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <enabled value="false"/>
+                  <toolTipText value="The Eclipse installation folder..."/>
+                </properties>
+              </component>
+              <component id="3305e" class="javax.swing.JButton" binding="btnEclipseFolder">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Browse"/>
+                  <toolTipText value="Click here to select the installation folder.."/>
+                </properties>
+              </component>
+              <component id="5c7a7" class="javax.swing.JRadioButton" binding="radioGoalsAll">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <selected value="true"/>
+                  <text value="Plugins and Sources"/>
+                  <toolTipText value="Examine all plugins of the installation..."/>
+                </properties>
+              </component>
+              <component id="9c955" class="javax.swing.JLabel" binding="lblGoal">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Target Plugins:"/>
+                </properties>
+              </component>
+              <component id="43c2" class="javax.swing.JRadioButton" binding="radioGoalsPlugins">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Plugins"/>
+                </properties>
+              </component>
+              <component id="8d815" class="javax.swing.JRadioButton" binding="radioGoalsSources">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Sources"/>
+                </properties>
+              </component>
+              <component id="7e4f9" class="javax.swing.JLabel" binding="lblTargetTag">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Target Tag:"/>
+                </properties>
+              </component>
+              <component id="e5dae" class="javax.swing.JComboBox" binding="comboTargetTag">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <editable value="true"/>
+                  <model>
+                    <item value=""/>
+                    <item value="artifactItem"/>
+                    <item value="dependency"/>
+                  </model>
+                  <toolTipText value="Choose the tag to embed the result in..."/>
+                </properties>
+              </component>
+              <component id="6bfb7" class="javax.swing.JCheckBox" binding="checkIncludeVersions">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <selected value="true"/>
+                  <text value="Include Version"/>
+                  <toolTipText value="Check this to create a version tag for each item..."/>
+                </properties>
+              </component>
+              <component id="f430b" class="javax.swing.JCheckBox" binding="checkIncludeSymbolics">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <selected value="true"/>
+                  <text value="Include Symbolic Names"/>
+                  <toolTipText value="Check this to generate a comment for each item which contains the bundle symbolic name..."/>
+                </properties>
+              </component>
+              <component id="4aa2b" class="javax.swing.JCheckBox" binding="checkMarkOptional">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Mark Optional"/>
+                  <toolTipText value="Check this if you want to mark the items optional..."/>
+                </properties>
+              </component>
+              <grid id="c307b" binding="panel_results" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="42e66" binding="outputscrollpane">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="73dde" class="javax.swing.JTextArea" binding="textAreaResult">
+                        <constraints/>
+                        <properties>
+                          <editable value="false"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <component id="6e738" class="javax.swing.JButton" binding="btnAnalyze">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Generate"/>
+                  <toolTipText value="Click here to start analyzer..."/>
+                </properties>
+              </component>
+              <component id="873e2" class="javax.swing.JButton" binding="btnCopyToClipboard">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Copy to Clipboard"/>
+                  <toolTipText value="Copies the contents of the result field into the clipboard..."/>
+                </properties>
+              </component>
+              <component id="4b65c" class="javax.swing.JButton" binding="btnSaveToFile">
+                <constraints>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Save"/>
+                  <toolTipText value="Saves the content of the result field into a file..."/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="goalButtonGroup">
+      <member id="5c7a7"/>
+      <member id="43c2"/>
+      <member id="8d815"/>
+    </group>
+  </buttonGroups>
+</form>
