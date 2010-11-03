@@ -1,5 +1,5 @@
 This tool scans a given Eclipse folder for plugins and lists those plugins
 in a format configured by the user. You can use this tool after using the 
 mvn eclipse:to-maven goal to setup a parent pom containing all content of
-the eclipse installation with the specific versions.
+the eclipse installation with the specific versions of the artifacts.
 
